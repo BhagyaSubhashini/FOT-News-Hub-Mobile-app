@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="Ai News"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ai_img" />
+                    android:src="@drawable/artificialIntelligence" />
 
                 <TextView
                     android:layout_width="match_parent"

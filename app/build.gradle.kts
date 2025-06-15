@@ -31,6 +31,12 @@ android {
     }
 }
 
+android {
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
 dependencies {
 
     implementation(libs.appcompat)
