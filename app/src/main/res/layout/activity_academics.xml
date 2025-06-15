@@ -51,7 +51,7 @@
         android:layout_width="325dp"
         android:layout_height="54dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/searchbar1" />
+        app:srcCompat="@drawable/searchbar2" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -79,7 +79,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Faculty of Technology Wins Inter-Faculty Cricket Tournament"
+                    android:text="University of Colombo Introduces AI in Curriculum"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:textColor="#FFFFFF"
@@ -88,7 +88,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Date : May 05, 2025"
+                    android:text="Date : May 04, 2025"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:paddingBottom="8dp" />
@@ -96,14 +96,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="Cricket News"
+                    android:contentDescription="Ai News"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/cricketmatch" />
+                    android:src="@drawable/ai_img" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="In a thrilling final match, the Faculty of Technology cricket team triumphed over the Faculty of Science, winning by 8 wickets ......see more"
+                    android:text="The Department of ICT at the University of Colombo has launched new modules focusing on Artificial Intelligence and Machine Learning ........see more"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:paddingTop="8dp" />
@@ -123,7 +123,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Gym Facility Opens on Campus"
+                    android:text="Free Online Workshops on Data Science"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:textColor="#FFFFFF"
@@ -132,7 +132,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Date : May 01, 2025"
+                    android:text="Date : May 02, 2025"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:paddingBottom="8dp" />
@@ -140,14 +140,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:contentDescription="Gym News"
+                    android:contentDescription="Class News"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gym" />
+                    android:src="@drawable/classroom" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="The Vice Chancellor officially opened a new state-of-the-art fitness center inside the main sports complex. ......see more"
+                    android:text="The University’s Data Science Club will host weekly online workshops covering Python, pandas, and data visualization using Tableau. All students are welcome. Participation certificates will ....see more"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:paddingTop="8dp" />
@@ -169,14 +169,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/sports2"
+            android:src="@drawable/sports1"
             android:contentDescription="Trophy" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/academics1"
+            android:src="@drawable/academics2"
             android:contentDescription="Graduation" />
 
         <ImageView

@@ -51,7 +51,7 @@
         android:layout_width="325dp"
         android:layout_height="54dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/searchbar1" />
+        app:srcCompat="@drawable/searchbar3" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -79,7 +79,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Faculty of Technology Wins Inter-Faculty Cricket Tournament"
+                    android:text="Coding Hackathon Kicks Off This Weekend Registrations are open"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:textColor="#FFFFFF"
@@ -96,14 +96,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="Cricket News"
+                    android:contentDescription="Hack News"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/cricketmatch" />
+                    android:src="@drawable/hacker" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="In a thrilling final match, the Faculty of Technology cricket team triumphed over the Faculty of Science, winning by 8 wickets ......see more"
+                    android:text="The annual HackTheCode hackathon will be held on May 3–4, with teams of 3–5 competing for prizes worth LKR 100,000+. Registrations ......see more"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:paddingTop="8dp" />
@@ -123,7 +123,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Gym Facility Opens on Campus"
+                    android:text="ICT Day 2025 Scheduled for June 20"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:textColor="#FFFFFF"
@@ -132,7 +132,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Date : May 01, 2025"
+                    android:text="Date : May 03, 2025"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:paddingBottom="8dp" />
@@ -140,14 +140,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:contentDescription="Gym News"
+                    android:contentDescription="ICT day News"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gym" />
+                    android:src="@drawable/ict_day" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="The Vice Chancellor officially opened a new state-of-the-art fitness center inside the main sports complex. ......see more"
+                    android:text="ICT Day 2025 will feature tech exhibitions, industry guest speakers (including alumni from top tech companies), and student project showcases ......see more"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:paddingTop="8dp" />
@@ -169,7 +169,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/sports2"
+            android:src="@drawable/sports1"
             android:contentDescription="Trophy" />
 
         <ImageView
@@ -183,7 +183,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/events1"
+            android:src="@drawable/events2"
             android:contentDescription="Calendar" />
     </LinearLayout>
 </LinearLayout>
