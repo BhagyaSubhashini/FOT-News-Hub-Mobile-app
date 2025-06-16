@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout
+    android:id="@+id/main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         android:layout_marginTop="8dp">
 
         <ImageView
+            android:id="@+id/account"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/account"
@@ -35,6 +37,7 @@
             android:textColor="@android:color/black"/>
 
         <ImageView
+            android:id="@+id/settings"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/settings"
@@ -77,6 +80,7 @@
                 android:elevation="2dp">
 
                 <TextView
+                    android:id="@+id/topicSports1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Faculty of Technology Wins Inter-Faculty Cricket Tournament"
@@ -86,6 +90,7 @@
                     android:paddingBottom="4dp" />
 
                 <TextView
+                    android:id="@+id/dateSports1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date : May 05, 2025"
@@ -94,6 +99,7 @@
                     android:paddingBottom="8dp" />
 
                 <ImageView
+                    android:id="@+id/picSports1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="Cricket News"
@@ -101,6 +107,7 @@
                     android:src="@drawable/cricketmatch" />
 
                 <TextView
+                    android:id="@+id/descriptionSports1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="In a thrilling final match, the Faculty of Technology cricket team triumphed over the Faculty of Science, winning by 8 wickets ......see more"
@@ -121,6 +128,7 @@
                 android:elevation="2dp">
 
                 <TextView
+                    android:id="@+id/topicSports2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="New Gym Facility Opens on Campus"
@@ -130,6 +138,7 @@
                     android:paddingBottom="4dp" />
 
                 <TextView
+                    android:id="@+id/dateSports2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date : May 01, 2025"
@@ -138,6 +147,7 @@
                     android:paddingBottom="8dp" />
 
                 <ImageView
+                    android:id="@+id/picSports2"
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
                     android:contentDescription="Gym News"
@@ -145,6 +155,7 @@
                     android:src="@drawable/gym" />
 
                 <TextView
+                    android:id="@+id/descriptionSports2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="The Vice Chancellor officially opened a new state-of-the-art fitness center inside the main sports complex. ......see more"
@@ -166,6 +177,7 @@
         android:weightSum="3">
 
         <ImageView
+            android:id="@+id/sportsicon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -173,6 +185,7 @@
             android:contentDescription="Trophy" />
 
         <ImageView
+            android:id="@+id/academicsicon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -180,6 +193,7 @@
             android:contentDescription="Graduation" />
 
         <ImageView
+            android:id="@+id/eventsicon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

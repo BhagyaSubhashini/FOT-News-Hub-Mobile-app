@@ -3,6 +3,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -18,6 +19,7 @@
         android:layout_marginTop="8dp">
 
         <ImageView
+            android:id="@+id/account"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/account"
@@ -35,6 +37,7 @@
             android:textColor="@android:color/black"/>
 
         <ImageView
+            android:id="@+id/settings"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/settings"
@@ -77,6 +80,7 @@
                 android:elevation="2dp">
 
                 <TextView
+                    android:id="@+id/topicAcademics1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="University of Colombo Introduces AI in Curriculum"
@@ -86,6 +90,7 @@
                     android:paddingBottom="4dp" />
 
                 <TextView
+                    android:id="@+id/dateAcademics1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date : May 04, 2025"
@@ -94,6 +99,7 @@
                     android:paddingBottom="8dp" />
 
                 <ImageView
+                    android:id="@+id/picAcademics1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="Ai News"
@@ -101,6 +107,7 @@
                     android:src="@drawable/techimg" />
 
                 <TextView
+                    android:id="@+id/descriptionAcademics1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="The Department of ICT at the University of Colombo has launched new modules focusing on Artificial Intelligence and Machine Learning ........see more"
@@ -121,6 +128,7 @@
                 android:elevation="2dp">
 
                 <TextView
+                    android:id="@+id/topicAcademics2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Free Online Workshops on Data Science"
@@ -130,6 +138,7 @@
                     android:paddingBottom="4dp" />
 
                 <TextView
+                    android:id="@+id/dateAcademics2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date : May 02, 2025"
@@ -138,6 +147,7 @@
                     android:paddingBottom="8dp" />
 
                 <ImageView
+                    android:id="@+id/picAcademics2"
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
                     android:contentDescription="Class News"
@@ -145,6 +155,7 @@
                     android:src="@drawable/classroom" />
 
                 <TextView
+                    android:id="@+id/descriptionAcademics2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="The University’s Data Science Club will host weekly online workshops covering Python, pandas, and data visualization using Tableau. All students are welcome. Participation certificates will ....see more"
@@ -166,6 +177,7 @@
         android:weightSum="3">
 
         <ImageView
+            android:id="@+id/sportsicon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -173,6 +185,7 @@
             android:contentDescription="Trophy" />
 
         <ImageView
+            android:id="@+id/academicsicon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -180,6 +193,7 @@
             android:contentDescription="Graduation" />
 
         <ImageView
+            android:id="@+id/eventsicon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

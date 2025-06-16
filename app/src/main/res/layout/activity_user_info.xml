@@ -65,20 +65,11 @@
                 android:src="@drawable/profileimg"
                 android:clipToOutline="true" />
 
-            <ImageView
-                android:id="@+id/edit_profile_icon"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="8dp"
-                android:clickable="true"
-                android:contentDescription="Edit"
-                android:focusable="true"
-                android:src="@drawable/editpen" />
         </FrameLayout>
 
         <!-- Username -->
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jack Shepard"
@@ -96,6 +87,7 @@
 
         <!-- Email -->
         <TextView
+            android:id="@+id/userEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="jackshepard123@gmail.com"
