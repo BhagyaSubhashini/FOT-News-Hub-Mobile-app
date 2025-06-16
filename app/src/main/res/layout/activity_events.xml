@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#4703D1">
+    android:background="#431DC5">
 
     <!-- Top bar with icons and title -->
     <LinearLayout
@@ -39,13 +39,11 @@
         <ImageView
             android:id="@+id/settings"
             android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/settings"
+            android:layout_height="22dp"
+            android:layout_marginStart="12dp"
             android:contentDescription="Settings Icon"
-            android:layout_marginStart="12dp" />
+            android:src="@drawable/settings" />
     </LinearLayout>
-
-    <!-- Search bar -->
 
 
     <!-- Scrollable news content -->

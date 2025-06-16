@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4703D1"
+    android:background="#431DC5"
+    android:id="@+id/main"
     android:padding="16dp">
 
     <LinearLayout
@@ -138,7 +139,7 @@
                 android:gravity="center" />
 
             <Button
-                android:id="@+id/btn_cancel_signout"
+                android:id="@+id/btn_cancel_delete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="CANCEL"

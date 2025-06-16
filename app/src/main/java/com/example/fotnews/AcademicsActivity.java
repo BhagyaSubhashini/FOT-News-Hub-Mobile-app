@@ -20,6 +20,8 @@ public class AcademicsActivity extends AppCompatActivity {
         // Initialize navigation icons
         ImageView sportsIcon = findViewById(R.id.sportsicon);
         ImageView eventsIcon = findViewById(R.id.eventsicon);
+        ImageView accountIcon = findViewById(R.id.account);
+        ImageView settingsIcon = findViewById(R.id.settings);
 
         // Set OnClickListener for sportsicon (navigate to HomeActivity)
         sportsIcon.setOnClickListener(v -> {
@@ -31,6 +33,20 @@ public class AcademicsActivity extends AppCompatActivity {
         eventsIcon.setOnClickListener(v -> {
             Intent intent = new Intent(AcademicsActivity.this, EventsActivity.class);
             startActivity(intent);
+        });
+
+        // Set OnClickListener for account icon
+        accountIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(AcademicsActivity.this, UserInfoActivity.class);
+            startActivity(intent);
+            finish(); // Finish AcademicsActivity to remove it from back stack
+        });
+
+        // Set OnClickListener for settings icon
+        settingsIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(AcademicsActivity.this, DeveloperInfoActivity.class);
+            startActivity(intent);
+            finish(); // Finish AcademicsActivity to remove it from back stack
         });
 
         // Apply window insets to the root view with ID 'main'

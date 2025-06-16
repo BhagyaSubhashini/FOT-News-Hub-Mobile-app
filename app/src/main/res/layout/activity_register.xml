@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#4703D1"
+    android:background="#431DC5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
@@ -26,8 +26,6 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
-
-
         <EditText
             android:id="@+id/Username"
             android:layout_width="match_parent"
@@ -38,8 +36,8 @@
             android:gravity="center"
             android:inputType="textEmailAddress"
             android:paddingStart="8dp"
-            android:textColor="#00BCD4"
-            android:textColorHint="#D3ECF6" />
+            android:textColorHint="#CCCCCC"
+            android:textColor="@android:color/white" />
 
         <EditText
             android:id="@+id/Password"
@@ -75,7 +73,7 @@
             android:background="@android:color/transparent"
             android:hint="Email"
             android:gravity="center"
-            android:inputType="textPassword"
+            android:inputType="textEmailAddress"
             android:paddingStart="8dp"
             android:textColor="#FFFFFF"
             android:textColorHint="#CFE8F2" />

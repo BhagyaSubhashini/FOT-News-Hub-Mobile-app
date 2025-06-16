@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4703D1"
+    android:id="@+id/main"
+    android:background="#431DC5"
     android:padding="16dp">
 
     <LinearLayout
@@ -19,6 +20,7 @@
             android:layout_marginBottom="16dp">
 
             <ImageView
+                android:id="@+id/home"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/home"
@@ -35,6 +37,7 @@
                 android:gravity="center" />
 
             <ImageView
+                android:id="@+id/settings"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/settings"
@@ -71,7 +74,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bhagya Wijenaya"
+            android:text="Bhagya Wijenayaka"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:layout_marginBottom="8dp" />
