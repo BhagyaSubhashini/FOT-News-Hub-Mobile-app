@@ -2,15 +2,22 @@ package com.example.fotnews;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import android.widget.Button;
-import android.widget.ImageView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class DeleteAccountActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
+    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +25,11 @@ public class DeleteAccountActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_delete_account);
 
-        // Initialize navigation icons and buttons
+        // Initialize Firebase
+        mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+
+        // Initialize UI elements
         ImageView homeIcon = findViewById(R.id.home);
         ImageView settingsIcon = findViewById(R.id.settings);
         Button okButton = findViewById(R.id.btn_ok);
@@ -28,32 +39,54 @@ public class DeleteAccountActivity extends AppCompatActivity {
         homeIcon.setOnClickListener(v -> {
             Intent intent = new Intent(DeleteAccountActivity.this, HomeActivity.class);
             startActivity(intent);
-            finish(); // Finish DeleteAccountActivity to remove it from back stack
+            finish();
         });
 
         // Set OnClickListener for settings icon
         settingsIcon.setOnClickListener(v -> {
             Intent intent = new Intent(DeleteAccountActivity.this, DeveloperInfoActivity.class);
             startActivity(intent);
-            finish(); // Finish DeleteAccountActivity to remove it from back stack
+            finish();
         });
 
         // Set OnClickListener for OK button
         okButton.setOnClickListener(v -> {
-            Intent intent = new Intent(DeleteAccountActivity.this, RegisterActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK); // Clear back stack
-            startActivity(intent);
-            finish(); // Finish DeleteAccountActivity to remove it from back stack
+            FirebaseUser user = mAuth.getCurrentUser();
+            if (user != null) {
+                String uid = user.getUid();
+                // Delete user from Authentication
+                user.delete()
+                        .addOnCompleteListener(task -> {
+                            if (task.isSuccessful()) {
+                                // Delete user data from Firestore
+                                db.collection("Users").document(uid).delete()
+                                        .addOnSuccessListener(aVoid -> {
+                                            Toast.makeText(this, "Account deleted", Toast.LENGTH_SHORT).show();
+                                            Intent intent = new Intent(DeleteAccountActivity.this, RegisterActivity.class);
+                                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
+                                            finish();
+                                        })
+                                        .addOnFailureListener(e -> {
+                                            Toast.makeText(this, "Firestore deletion failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                                        });
+                            } else {
+                                Toast.makeText(this, "Account deletion failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        });
+            } else {
+                Toast.makeText(this, "No authenticated user found", Toast.LENGTH_SHORT).show();
+            }
         });
 
         // Set OnClickListener for cancel button
         cancelButton.setOnClickListener(v -> {
             Intent intent = new Intent(DeleteAccountActivity.this, UserInfoActivity.class);
             startActivity(intent);
-            finish(); // Finish DeleteAccountActivity to remove it from back stack
+            finish();
         });
 
-        // Apply window insets to the root view with ID 'main'
+        // Apply window insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
