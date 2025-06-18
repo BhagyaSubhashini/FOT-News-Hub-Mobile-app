@@ -18,7 +18,7 @@
 ## 🛠️ Tech Stack
 
 - **Platform**: Android (Java)
-- **Backend**: Firebase
+- **Backend**: Java
 - **Database**: Firebase Firestore
 
 ---
